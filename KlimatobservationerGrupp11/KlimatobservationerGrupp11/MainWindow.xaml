@@ -1,0 +1,48 @@
+﻿<Window x:Class="KlimatobservationerGrupp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlimatobservationerGrupp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnObserverGetList" Content="Get observer list" HorizontalAlignment="Left" Margin="217,203,0,0" VerticalAlignment="Top" Click="btnObserverGetList_Click"/>
+        <ListBox x:Name="lstObservers" Margin="217,70,346,242" MouseDoubleClick="lstObservers_MouseDoubleClick"/>
+        <Button x:Name="btnAddObserver" Content="Add" HorizontalAlignment="Left" Margin="57,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.471,3.507" Click="btnAddObserver_Click"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="57,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="57,112,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblAddObserver" Content="Add observer" HorizontalAlignment="Left" Margin="57,24,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="lblObserverFirstName" Content="First name" HorizontalAlignment="Left" Margin="57,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblObserverLastName" Content="Last name" HorizontalAlignment="Left" Margin="57,88,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblObserverList" Content="Observer list" HorizontalAlignment="Left" Margin="217,24,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="btnUpdateObserver" Content="Update" HorizontalAlignment="Left" Margin="317,203,0,0" VerticalAlignment="Top" Click="btnUpdateObserver_Click" Width="50"/>
+        <Button x:Name="btnDeleteObserver" Content="Delete" HorizontalAlignment="Center" Margin="0,203,0,0" VerticalAlignment="Top" Click="btnDeleteObserver_Click" RenderTransformOrigin="-0.306,-0.174" Width="40"/>
+        <Label x:Name="lblAddObservation" Content="Observation" HorizontalAlignment="Left" Margin="57,194,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="lblAddValue" Content="Amount" HorizontalAlignment="Left" Margin="532,232,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAddValue" HorizontalAlignment="Left" Margin="533,260,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <ComboBox Name="cboCategory" HorizontalAlignment="Left" Margin="388,258,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblAddCategory" Content="Category" HorizontalAlignment="Left" Margin="388,232,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAddLocation" Content="Location" HorizontalAlignment="Left" Margin="172,232,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstObservations" Margin="533,68,38,240" MouseDoubleClick="lstObservations_MouseDoubleClick"/>
+        <Label x:Name="lblObservations" Content="Observation list" HorizontalAlignment="Left" Margin="533,24,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="btnGetObservations" Content="Get observation list" HorizontalAlignment="Left" Margin="533,203,0,0" VerticalAlignment="Top" Click="btnGetObservations_Click" Visibility="Hidden"/>
+        <Button x:Name="btnAddObservation" Content="Add observation" HorizontalAlignment="Left" Margin="607,258,0,0" VerticalAlignment="Top" Click="btnAddObservation_Click" Height="24" IsEnabled="False"/>
+        <Label x:Name="lblAddDate" Content="Date" HorizontalAlignment="Left" Margin="57,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.23,-0.026"/>
+        <DatePicker Name="dtePicker" HorizontalAlignment="Left" Margin="57,258,0,0" VerticalAlignment="Top" FirstDayOfWeek="Monday"/>
+        <ComboBox x:Name="cboLocation" HorizontalAlignment="Left" Margin="172,258,0,0" VerticalAlignment="Top" Width="203"/>
+        <Label x:Name="lblSelectObserverInfo" Content="Select observer from list." HorizontalAlignment="Left" Margin="59,213,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Visible"/>
+        <Label x:Name="lblSelectObservationInfo" Content="Select observation from list." HorizontalAlignment="Left" Margin="607,318,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Visible"/>
+        <Button x:Name="btnEditObservation" Content="Edit observation" HorizontalAlignment="Left" Margin="609,294,0,0" VerticalAlignment="Top" Height="24" IsEnabled="False" Click="btnEditObservation_Click"/>
+        <ListBox x:Name="lstMeasurements" Margin="400,328,213,26" MouseDoubleClick="lstMeasurements_MouseDoubleClick"/>
+        <Border x:Name="borderMeasurement" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="192" Margin="383,232,0,0" VerticalAlignment="Top" Width="219"/>
+        <Button x:Name="btnAddMeasurement" Content="Add to list" HorizontalAlignment="Left" Margin="522,296,0,0" VerticalAlignment="Top" Width="65" Click="btnAddMeasurement_Click"/>
+        <Button x:Name="btnUpdateList" Content= "Update list" HorizontalAlignment="Left" Margin="447,296,0,0" VerticalAlignment="Top" Click="btnUpdateList_Click" IsEnabled="False"/>
+
+
+
+
+
+
+    </Grid>
+</Window>
